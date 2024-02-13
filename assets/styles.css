@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+body {
+    background-color: #333;
+    position: relative;
+    color: #aaa;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    background-color: #333;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+}
+
+header .home-link {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+}
+
+header .home-link .logo {
+    width: 100%;
+}
+
+header .title {
+    margin: 15px 25px 0;
+}
+
+header ul {
+    display: inline-flex;
+    font-size: 1.5em;
+    list-style: none;
+    margin: 1.75rem .5rem 0;
+}
+
+header ul li {
+    padding: 0 10px
+}
+
+main {
+    margin: 70px auto 0;
+    position: relative;
+}
+
+section {
+    min-height: 660px;
+}
+
+section:not(#landing) {
+    margin: 15px 30px;
+}
+
+span.page--marker {
+    position: fixed;
+    right: 25px;
+    top: 50%;
+    z-index: 21;
+}
+
+span.page--marker .marker {
+    border: 1px solid #bbb;
+    border-radius: 7px;
+    height: 10px;
+    margin: 5px 0;
+    width: 10px;
+}
+
+span.page--marker .marker.active {
+    background: #bbb;
+}
+
+section#landing {
+    overflow: hidden;
+    position: relative;
+}
+
+section h1#heading {
+    color: #aaa;
+    left: 25px;
+    position: absolute;
+    top: 25px;
+    z-index: 19;
+}
+
+section#landing .carousel img.image {
+    height: 100%;
+    position: absolute;
+}
+
+section .cta {
+    border-radius: 15px;
+    bottom: 30px;
+    padding: 15px;
+    position: absolute;
+    right: 30px;
+}
+
+section h2.heading {
+    color: #aaa;
+    margin: 25px auto 10px;
+}
+
+
+
+footer {
+    display: flex;
+}
+
+footer p {
+    margin: 5px auto 5px;
+}
