@@ -63,6 +63,7 @@ main {
 
 section {
     min-height: 660px;
+    position: relative;
 }
 
 section:not(#landing) {
@@ -90,7 +91,6 @@ span.page--marker .marker.active {
 
 section#landing {
     overflow: hidden;
-    position: relative;
 }
 
 section h1#heading {
@@ -102,8 +102,8 @@ section h1#heading {
 }
 
 section#landing .carousel img.image {
-    height: 100%;
     position: absolute;
+    width: 100%;
 }
 
 section .cta {
@@ -117,6 +117,10 @@ section .cta {
 section h2.heading {
     color: #aaa;
     margin: 25px auto 10px;
+}
+
+section#menu-section .menu-images .menu-image {
+    width: 50%;
 }
 
 
